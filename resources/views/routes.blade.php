@@ -7,12 +7,10 @@
 	<link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/bootstrap.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
-
 <body class="flex-center position-ref full-height">
 	<div class="container content">
 		<h1>Pantallas del Sistema</h1>
 		<hr>
-		<a class="btn btn-success" href="{{ url('/admin') }}" role="button">Admin</a>
 		<a class="btn btn-default" href="{{ url('/inicio') }}" role="button">Inicio</a>
 		<a class="btn btn-default" href="{{ url('/login') }}" role="button">Iniciar Sesión</a>
 		<a class="btn btn-default" href="{{ url('/register') }}" role="button">Registrarse</a>
@@ -23,7 +21,6 @@
 		<a class="btn btn-danger" href="{{ url('/ticket') }}" role="button">Ticket | Informacion General</a>
 		<a class="btn btn-danger" href="{{ url('/dashboard') }}" role="button">Dashboard</a>
 	</div>
-
 	<script src="{{ asset('plugins/bootstrap/js/jquery.js') }}"></script>
 	<script src="{{ asset('plugins/bootstrap/js/bootstrap.js') }}"></script>
 </body>
