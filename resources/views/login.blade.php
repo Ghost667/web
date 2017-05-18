@@ -11,7 +11,7 @@
 <body background="{{ asset('images/background1.jpg') }}" class="body">
 
 <br><br>
-    <div class="container">  
+    <div class="container">
       <center>
           <form id="form" name="form" class="form-horizontal" method="POST" 
           action='/user'>

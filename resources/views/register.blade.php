@@ -11,7 +11,7 @@
 <body class="body">
     <div class="container">
       <center>
-          <form id="form1" name="form1" class="form-horizontal" method="POST" action='/registerUser'> 
+          <form class="form-horizontal" method="POST" action='/registerUser'> 
           <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
           <div class="col-sm-5 input-group"><h1 >Registro</h1></div>
         <br><br>
@@ -19,14 +19,14 @@
               <label class="control-label col-sm-3" for="name">Nombre:</label>
               <div class="col-sm-6 input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa el nombre">
+                <input type="email" class="form-control" id="name" name="name" placeholder="Ingresa el nombre">
               </div>
             </div>
             <div class="form-group">
               <label class="control-label col-sm-3" for="apep">Apellidos:</label>
               <div class="col-sm-6 input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                <input type="text" class="form-control" name ="apep" id="apep" placeholder="Ingresa los apellidos">
+                <input type="email" class="form-control" name ="apep" id="apep" placeholder="Ingresa los apellidos">
               </div>
             </div>
              <div class="form-group">
@@ -47,14 +47,14 @@
               <label class="control-label col-sm-3" for="telephone">Telefono:</label>
               <div class="col-sm-6 input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-phone-alt"></i></span>
-                <input type="text" class="form-control" name="telephone" id="telephone" placeholder="Ingresa el telefono">
+                <input type="email" class="form-control" name="telephone" id="telephone" placeholder="Ingresa el telefono">
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-sm-3" for="cellphone">Celular:</label>
+              <label class="control-label col-sm-3" for="celphone">Celular:</label>
               <div class="col-sm-6 input-group">
               <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                <input type="text" class="form-control" name="cellphone" id="cellphone" placeholder="Ingresa el celular">
+                <input type="email" class="form-control" name="celphone" id="celphone" placeholder="Ingresa el celular">
                 
               </div>
             </div>
@@ -70,10 +70,10 @@
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-sm-3" for="region">Región:</label>
+              <label class="control-label col-sm-3" for="reg">Región:</label>
               <div class="col-sm-6 input-group">
-                <select class="form-control" name ="region" id="region">
-                  <option value="Mexico">Mexico</option>
+                <select class="form-control selectpicker" id="reg">
+                  <option value="Mexico">México</option>
                 </select>
               </div>
             </div>
